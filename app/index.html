@@ -17,6 +17,14 @@
             text-align: center;
             background-color: #FFEC61;
         }
+        .fixing{
+            margin-left:60px;
+        }
+        @media all and (min-width: 300px) and (max-width: 800px) {
+            .fixing{
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -79,9 +87,24 @@
                 <div style="background-image: url('images/overlay-pattern.png');position: relative;top: 0;left: 0;width: 100%;height: 100%;background-repeat: repeat;background-attachment: scroll;">
 
                     <div class="row text-center" style="padding-top:110px;">
-                        <img src="images/logo.png" alt="" style="margin-left: 70px;"> </div>
+                        <img src="images/logo.png" alt="" style="margin-left: 70px;">
+                    </div>
 
-                    <div class="col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8 text-center" style="position:absolute; bottom:20px;">
+                    <div style="position:absolute; top:35%; width:100%;">
+                        <div class="container">
+                            <div class="col-sm-offset-4 col-sm-4">
+                                <div class="fixing">
+                                    <h4>Pre-registro:</h4>
+                                    <gold-email-input required></gold-email-input>
+                                    <paper-button raised style="margin-top:15px; width:100%; border: solid 1px white; color:white; letter-spacing: 3px; font-weight: 500;">
+                                        Enviar
+                                    </paper-button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden-xs col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8 text-center" style="position:absolute; bottom:20px;">
                         <h1 style="text-transform: uppercase; margin-left:60px; font-size:46.5px">Conectamos a <span style="color:white">quienes viajan </span>con los que <span style="color:white">quieren enviar</span></h1>
                     </div>
 
