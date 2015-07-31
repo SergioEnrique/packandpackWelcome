@@ -81,7 +81,8 @@
             </paper-toolbar>
 
             <parallax-container>
-                <parallax-group>
+
+                <parallax-group z="2">
                     <parallax-layer>
                         <div style="background: url('images/background2.jpg'); height: 100%;">
                             <div style="background-image: url('images/overlay-pattern.png');position: relative;top: 0;left: 0;width: 100%;height: 100%;background-repeat: repeat;background-attachment: scroll;">
@@ -112,22 +113,46 @@
                         </div>
                     </parallax-layer>
                 </parallax-group>
-                <parallax-group>
-                    <parallax-layer>
+
+
+                <parallax-group z="0"> 
+                    <parallax-layer layer="-1" style="background:url('images/backgroundtarget.jpg'); background-size:cover;"></parallax-layer>
+                    <parallax-layer layer="0">
                         <section hero>
                             <div class="container text-center">
-                                    <h2>Próximamente</h2>
-                                    
+                                <h2 style="margin-bottom:51px;">Próximamente</h2>
+                                <span><img src="images/googlePlay.png" width="200px;"></span>
                             </div>
                         </section>
                     </parallax-layer>
                 </parallax-group>
-                <parallax-group>
-                    <parallax-layer>
-                        <h1 style="margin-top:100px;">3</h1>
+
+                <parallax-group z="1">
+                    <parallax-layer layer="0" style="background-color:#2B2B2B;"></parallax-layer>
+                    <parallax-layer layer="0">
+                        <section hero>
+                            <h2>¿Qué es Pack &amp; Pack?</h2>
+                            <p>
+                                Alguna buena descripción de lo que es pack and pack
+                            </p>
+                        </section>
                     </parallax-layer>
                 </parallax-group>
-            </parallax-container>          
+
+                <parallax-group z="0">
+                    <parallax-layer layer="-1" style="background:url('images/background1.jpg'); background-size:cover;"></parallax-layer>
+                    <parallax-layer layer="0">
+                        <section hero>
+                            <h2>¿Qué es Pack &amp; Pack?</h2>
+                            <p>
+                                Alguna buena descripción de lo que es pack and pack
+                            </p>
+                        </section>
+                    </parallax-layer>
+                </parallax-group>
+
+
+            </parallax-container>
             
 
         </paper-header-panel>
