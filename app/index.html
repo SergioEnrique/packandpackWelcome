@@ -27,9 +27,49 @@
         .fixing{
             margin-left:60px;
         }
+        .pSection{
+            font-size: 18px;
+            line-height: 30px;
+        }
+        h1.caption{
+            margin-left:85px!important;
+            font-size:40px!important;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+        h2.section-title{
+            color: #FFE100!important;
+            font-size: 60px!important;
+            font-weight: 800;
+            margin-top:-10px!important;
+            line-height: 72px;
+            letter-spacing: -2px;
+        }
+        h2.section-title:after {
+            display: block;
+            content: "";
+            height: 5px;
+            width: 120px;
+            margin-top: 2px;
+            margin-bottom: 10px;
+            position: relative;
+            background: #FFE100;
+        }
+        p{
+            color: white;
+        }
         @media all and (min-width: 300px) and (max-width: 800px) {
             .fixing{
                 margin-left: 0;
+            }
+            h2.section-title{
+                font-size: 28px!important;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            p{
+                font-size: 12px!important;
+                line-height: 20px!important;
             }
         }
     </style>
@@ -88,7 +128,12 @@
                             <div style="background-image: url('images/overlay-pattern.png');position: relative;top: 0;left: 0;width: 100%;height: 100%;background-repeat: repeat;background-attachment: scroll;">
 
                                 <div class="row text-center" style="padding-top:110px;">
-                                    <img src="images/logo.png" alt="" style="margin-left: 70px;">
+                                    <div class="col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
+                                    <img src="images/logo.png" alt="" class="hidden-xs hidden-sm hidden-md img-responsive" style="margin-left:130px;">
+                                        <img src="images/logo.png" alt="" class="visible-md img-responsive" style="margin-left:70px;">
+                                        <img src="images/logo.png" alt="" class="visible-sm img-responsive" style="margin-left:30px;">
+                                        <img src="images/logo.png" alt="" class="visible-xs img-responsive">
+                                    </div>
                                 </div>
 
                                 <div style="position:absolute; top:35%; width:100%;">
@@ -105,8 +150,9 @@
                                     </div>
                                 </div>
 
-                                <div class="hidden-xs col-sm-offset-1 col-sm-10 col-lg-offset-2 col-lg-8 text-center" style="position:absolute; bottom:20px;">
-                                    <h1 style="text-transform: uppercase; margin-left:60px; font-size:46.5px">Conectamos a <span style="color:white">quienes viajan </span>con los que <span style="color:white">quieren enviar</span></h1>
+                                <div class="hidden-xs col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6 text-center" style="position:absolute; bottom:30px;">
+                                    <h1 class="caption">Conectamos a <span style="color:white">quienes viajan</span>
+                                    <br>con los que <span style="color:white">quieren enviar</span></h1>
                                 </div>
 
                             </div>
@@ -116,27 +162,44 @@
 
 
                 <parallax-group z="0"> 
-                    <parallax-layer layer="-1" style="background:url('images/backgroundtarget.jpg'); background-size:cover;"></parallax-layer>
+                    <parallax-layer layer="-1" style="background:url('images/background4.jpg'); background-size:cover;"></parallax-layer>
+
                     <parallax-layer layer="0">
                         
                         <section hero>
-                            <div class="container text-center">
-                                <div class="row">
-                                    <h2 style="margin-bottom:51px;">Próximamente</h2>
+                            <div class="container">
+                                <div class="col-sm-offset-1 col-sm-10 text-left">
+                                    <div class="row text-center">
+                                        <h3 class="section-title" style="margin-bottom:51px; font-size:40px;">- Próximamente -</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="hidden-xs col-sm-6 text-right">
+                                            <img src="images/appstore.png">
+                                        </div>
+                                        <div class="hidden-xs col-sm-6 text-left">
+                                            <img src="images/googlePlay.png">
+                                        </div>
+                                        <div class="visible-xs col-xs-12 text-center" style="margin-bottom:30px;">
+                                            <img src="images/appstore.png">
+                                        </div>
+                                        <div class="visible-xs col-xs-12 text-center">
+                                            <img src="images/googlePlay.png">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <div class="hidden-xs col-sm-6 text-right">
-                                        <img src="images/appstore.png">
-                                    </div>
-                                    <div class="hidden-xs col-sm-6 text-left">
-                                        <img src="images/googlePlay.png">
-                                    </div>
-                                    <div class="visible-xs col-xs-12 text-center" style="margin-bottom:30px;">
-                                        <img src="images/appstore.png">
-                                    </div>
-                                    <div class="visible-xs col-xs-12 text-center">
-                                        <img src="images/googlePlay.png">
-                                    </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="col-sm-offset-1 col-sm-10 text-left">
+                                <h2 class="section-title">¿Qué es Pack &amp; Pack?</h2>
+                                <p class="pSection" style="text-align:justify;">
+                                    Es una Startup que nació de la visión de jóvenes emprendedores en la ciudad de Puebla, México, al darse cuenta de lo complicado que resulta enviar cosas a cualquier destino, donde las paqueterías tradicionales utilizan métodos muy mecánicos y poco humanos para completatar un envío.
+                                </p>
+                                <div class="hidden-xs">
+                                     <h4 style="margin-top:30px; margin-bottom:25px;">Objetivo general:</h4>
+                                    <p class="pSection" style="text-align:justify;">
+                                        Ofrecer una alternativa sencilla y humana para quienes quieren enviar o recibir paquetes, conectándolos con personas que viajan.
+                                    </p>
                                 </div>
                             </div>
                         </section>
@@ -145,36 +208,66 @@
                 </parallax-group>
 
                 <parallax-group z="1">
-                    <parallax-layer layer="0" style="background:url('images/background1.jpg'); background-size:cover;">
-                        <div style="background-image: url('images/overlay-pattern.png');position: relative;top: 0;left: 0;width: 100%;height: 100%;background-repeat: repeat;background-attachment: scroll;">
-                            
-                        </div>
-                    </parallax-layer>
                     <parallax-layer layer="0">
-                        <section hero>
-                            <div class="container">
-                                <h2>¿Qué es Pack &amp; Pack?</h2>
-                                <p style="text-indent:50px; text-align:justify;">
-                                    Es una recién creada Startup que nació de la visión de jóvenes emprendedores en la ciudad de Puebla, México, al darse cuenta de lo complicado que resulta enviar cosas a cualquier destino, donde las paqueterías tradicionales utilizan métodos muy mecánicos y poco humanos para completatar un envío.
-                                </p>
-                                <h4 style="color:white; margin-top:30px;; margin-bottom:25px; lext">Objetivo general:</h4>
-                                <p style="text-align:justify;">
-                                    Ofrecer una alternativa sencilla y humana para quienes quieren enviar o recibir paquetes, conectándolos con personas que viajan.
-                                </p>
+                        <section hero style="min-height:100%">
+                            <div class="col-sm-offset-1 col-sm-10 text-left">
+                                <h2 class="section-title">Proceso / Funcionamiento</h2>
+                                <div class="row" style="margin-top:40px;">
+                                    <div class="col-sm-3 text-left">
+                                        <p class="pSection">
+                                            1. Abres la APP y seleccionas el destino con la fecha que deseas para enviar tu artículo.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="pSection">
+                                            2. Un viajero que se adapte a tus necesidades recibirá los datos de tu envío.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="pSection">
+                                            3. Nosotros los conectamos de una forma rápida y sencilla para que tu artículo llegue a su destino.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="pSection">
+                                            4. Podrás darle seguimiento por GPS y te brindamos la seguridad de que tú artículo viaja con un Packero certificado.
+                                        </p>
+                                    </div>
+                                </div>
+                                asdf
                             </div>
                         </section>
                     </parallax-layer>
                 </parallax-group>
 
                 <parallax-group z="0"> 
-                    <parallax-layer layer="-1" style="background:url('images/background2.jpg'); background-size:cover;"></parallax-layer>
+                    <parallax-layer layer="-1" style="background:url('images/backgroundtarget.jpg'); background-size:cover;"></parallax-layer>
                     <parallax-layer layer="0">
-                        <section hero>
-                            <div class="container text-center">
-                                <h2 style="margin-bottom:51px;">Próximamente</h2>
-                                <span><img src="images/googlePlay.png"></span>
-                            </div>
-                        </section>
+                        <div class="col-sm-offset-1 col-sm-10 text-left">
+                            <section>
+                                <h2 class="section-title text-left">Equipo</h2>
+                                <div class="col-sm-3" style="padding:0">
+                                    <div>
+                                        <img src="images/equipoRodrigo.jpg" alt="" style="width: 100%;">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3" style="padding:0">
+                                    <div>
+                                        <img src="images/equipoOmar.jpg" alt="" style="width: 100%;">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3" style="padding:0">
+                                    <div>
+                                        <img src="images/equipoSergio.jpg" alt="" style="width: 100%;">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3" style="padding:0">
+                                    <div>
+                                        <img src="images/equipoOmar.jpg" alt="" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </parallax-layer>
                 </parallax-group>
 
