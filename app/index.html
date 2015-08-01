@@ -31,6 +31,32 @@
             font-size: 18px;
             line-height: 30px;
         }
+        .quoteText{
+            color: white;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 48px;
+            text-align: center;
+            font-style: italic;
+        }
+        .quoteText:after{
+            display: block;
+            content: "";
+            height: 3px;
+            width: 55px;
+            margin: 8px auto 15px;
+            position: relative;
+            background: #F72100;
+        }
+        .quoteAuthor{
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
         h1.caption{
             margin-left:85px!important;
             font-size:40px!important;
@@ -239,7 +265,7 @@
                     <parallax-layer layer="0">
                         <section hero style="min-height:100%">
                             <div class="col-sm-offset-1 col-sm-10 text-left">
-                                <h2 class="section-title">Proceso / Funcionamiento</h2>
+                                <h2 class="section-title">Proceso</h2>
                                 <div class="row" style="margin-top:40px;">
                                     <div class="col-sm-3 text-left">
                                         <p class="pSection">
@@ -275,7 +301,7 @@
                             <section>
                                 <h2 class="section-title text-left">Equipo</h2>
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3 col-xs-6">
                                         <div style="border: solid 1px; border-bottom:none;">
                                             <img src="images/equipoOmar.jpg" alt="" style="width: 100%;">
                                         </div>
@@ -284,7 +310,7 @@
                                             <span class="teamTag">CEO</span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3 col-xs-6">
                                         <div style="border: solid 1px; border-bottom:none;">
                                             <img src="images/equipoSergio.jpg" alt="" style="width: 100%;">
                                         </div>
@@ -293,7 +319,7 @@
                                             <span class="teamTag">Dir. de Operaciones</span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3 col-xs-6">
                                         <div style="border: solid 1px; border-bottom:none;">
                                             <img src="images/equipoRodrigo.jpg" alt="" style="width: 100%;">
                                         </div>
@@ -302,7 +328,7 @@
                                             <span class="teamTag">Dir. de Información</span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3 col-xs-6">
                                         <div style="border: solid 1px; border-bottom:none;">
                                             <img src="images/equipoOmar.jpg" alt="" style="width: 100%;">
                                         </div>
@@ -311,6 +337,12 @@
                                             <span class="teamTag">CEO</span>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="row hidden-xs" style="padding-top:30px;">
+                                    <span class="quoteText">
+                                        "El mundo entero se aparta cuando ve pasar a un hombre que sabe a dónde va"
+                                    </span>
+                                    <span class="quoteAuthor">Antoine de Saint-Exupéry</span>
                                 </div>
                             </section>
                         </div>
