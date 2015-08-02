@@ -174,10 +174,10 @@
             </paper-toolbar>
             
             <paper-menu>
-                <a href="#acerca" class="menuLink"><paper-item>Acerca de</paper-item></a>
-                <a href="#proceso" class="menuLink"><paper-item>Proceso</paper-item></a>
-                <a href="#equipo" class="menuLink"><paper-item>Equipo</paper-item></a>
-                <a href="#contacto" class="menuLink"><paper-item>Contacto</paper-item></a>
+                <a id="acercalink" href="#acerca" class="menuLink"><paper-item paper-drawer-toggle>Acerca de</paper-item></a>
+                <a id="procesolink" href="#proceso" class="menuLink"><paper-item paper-drawer-toggle>Proceso</paper-item></a>
+                <a id="equipolink" href="#equipo" class="menuLink"><paper-item paper-drawer-toggle>Equipo</paper-item></a>
+                <a id="contactolink" href="#contacto" class="menuLink"><paper-item paper-drawer-toggle>Contacto</paper-item></a>
             </paper-menu>
 
         </paper-header-panel>
@@ -206,7 +206,7 @@
 
             </paper-toolbar>
 
-            <parallax-container>
+            <parallax-container id="main">
 
                 <parallax-group z="2">
                     <parallax-layer>
