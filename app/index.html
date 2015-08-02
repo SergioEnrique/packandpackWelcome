@@ -3,9 +3,10 @@
 <head>
     <title>Pack &amp; Pack</title>
     <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
     <link rel="import" href="elements/elements.html">
     <link rel="import" href="template.html">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
         #scrim{
             z-index: 1;
@@ -30,6 +31,29 @@
         .pSection{
             font-size: 18px;
             line-height: 30px;
+        }
+        .contact-info {
+            list-style: none;
+            padding-top: 9px;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            list-style-type: none;
+            margin:0;
+            padding:0;
+        }
+        .contact-info li {
+            margin-bottom: 50px;
+            font-size: 17px!important;
+        }
+        .contact-info span {
+            text-transform: uppercase;
+            font-weight: 700;
+            border-bottom: 2px solid #E2E2E2;
+            padding-bottom: 1px;
+            display: inline-block;
+            margin-bottom: 8px;
+            color: #E2E2E2;
         }
         .quoteText{
             color: white;
@@ -195,10 +219,12 @@
                                         <div class="col-sm-offset-4 col-sm-4">
                                             <div class="fixing">
                                                 <h4>Pre-registro:</h4>
-                                                <gold-email-input required></gold-email-input>
-                                                <paper-button raised style="margin-top:15px; width:100%; border: solid 1px white; color:white; letter-spacing: 3px; font-weight: 500;">
-                                                    Enviar
-                                                </paper-button>
+                                                <!--form preregistro-->
+                                                    <gold-email-input required></gold-email-input>
+                                                    <paper-button raised style="margin-top:15px; width:100%; border: solid 1px white; color:white; letter-spacing: 3px; font-weight: 500;">
+                                                        Enviar
+                                                    </paper-button>
+                                                <!--/form preregistro-->
                                             </div>
                                         </div>
                                     </div>
@@ -361,11 +387,39 @@
 
                 <parallax-group z="1">
                     <parallax-layer layer="0" style="background-color:#2B2B2B">
-                        <section hero>
-                            <h2>¿Qué es Pack &amp; Pack?</h2>
-                            <p>
-                                asdfasdf
-                            </p>
+                        <section>
+                            <div class="col-sm-offset-1 col-sm-10 text-left">
+                                <h2 class="section-title">Contacto</h2>
+                                <div class="row" style="margin-top:40px;">
+                                    <div class="col-sm-6">
+                                        <ul class="contact-info">
+                                            <li><span><i class="fa fa-map-marker"></i></span>
+                                                <p>39 Oriente, 1204, Col. Anzures, 72530<br>
+                                                    Puebla Pue., México</p>
+                                            </li>
+                                            <li><span><i class="fa fa-phone"></i></span>
+                                                <p>+52 (222) 798 0601</p>
+                                            </li>
+                                            <li><span><i class="fa fa-globe"></i></span>
+                                                <p><a href="mailto:packandpack1@gmail.com">packandpack1@gmail.com</a><br>
+                                                <a href="http://packandpack.com.mx">www.packandpack.com.mx</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!--form contacto-->
+                                            <gold-email-input required></gold-email-input>
+                                            <paper-input label="Asunto"></paper-input>
+                                            <paper-textarea label="Mensaje"></paper-textarea>
+                                            <div class="text-right">
+                                                <paper-button raised style="margin-top:15px; border: solid 1px white; color:white; letter-spacing: 3px; font-weight: 500; margin-right: -1px;">
+                                                    Enviar
+                                                </paper-button>
+                                            </div>
+                                        <!--/form contacto-->
+                                    </div>
+                                </div>
+                            </div>
                         </section>
 
                         <section hero style="position:absolute;bottom:0; width:100%;">
