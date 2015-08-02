@@ -14,6 +14,10 @@
         #drawer{
             z-index: 1;
         }
+        .menuLink{
+            color:#FFE100!important;
+            text-decoration: none!important;
+        }
         .topButtons:hover{
             text-align: center;
             background-color: #FFEC61;
@@ -54,6 +58,12 @@
             display: inline-block;
             margin-bottom: 8px;
             color: #E2E2E2;
+        }
+        .anchor{
+          display: block;
+          height: 64px; /*same height as header*/
+          margin-top: -64px; /*same height as header*/
+          visibility: hidden;
         }
         .quoteText{
             color: white;
@@ -125,7 +135,7 @@
         }
         .teamTag{
             text-align: left!important;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 300;
             padding-bottom: 5px;
             margin-top: 25px;
@@ -164,12 +174,10 @@
             </paper-toolbar>
             
             <paper-menu>
-                <paper-item>Acerca de</paper-item>
-                <paper-item>Proceso</paper-item>
-                <paper-item>Equipo</paper-item>
-                <paper-item>Desarrollo</paper-item>
-                <paper-item>Packeros</paper-item>
-                <paper-item>Contacto</paper-item>
+                <a href="#acerca" class="menuLink"><paper-item>Acerca de</paper-item></a>
+                <a href="#proceso" class="menuLink"><paper-item>Proceso</paper-item></a>
+                <a href="#equipo" class="menuLink"><paper-item>Equipo</paper-item></a>
+                <a href="#contacto" class="menuLink"><paper-item>Contacto</paper-item></a>
             </paper-menu>
 
         </paper-header-panel>
@@ -183,16 +191,16 @@
                 </div>
                 <div class="container">
                     <div class="col-sm-3 hidden-xs linkNavBar">
-                        <a href="#">Acerca de</a>
+                        <a href="#acerca">Acerca de</a>
                     </div>
                     <div class="col-sm-3 hidden-xs text-left linkNavBar">
-                        <a href="#">Proceso</a>
+                        <a href="#proceso">Proceso</a>
                     </div>
                     <div class="col-sm-3 hidden-xs text-right linkNavBar">
-                        <a href="#">Equipo</a>
+                        <a href="#equipo">Equipo</a>
                     </div>
                     <div class="col-sm-3 hidden-xs linkNavBar">
-                        <a href="#">Contacto</a>
+                        <a href="#contacto">Contacto</a>
                     </div>
                 </div>
 
@@ -269,6 +277,7 @@
                                 </div>
                             </div>
                         </section>
+                        <span class="anchor" id="acerca"></span>
                         <section>
                             <div class="col-sm-offset-1 col-sm-10 text-left">
                                 <h2 class="section-title">¿Qué es Pack &amp; Pack?</h2>
@@ -289,6 +298,7 @@
 
                 <parallax-group z="1">
                     <parallax-layer layer="0">
+                        <span class="anchor" id="proceso"></span>
                         <section hero style="min-height:100%">
                             <div class="col-sm-offset-1 col-sm-10 text-left">
                                 <h2 class="section-title">Proceso</h2>
@@ -334,6 +344,7 @@
                     <parallax-layer layer="-1" style="background:url('images/backgroundtarget.jpg'); background-size:cover;"></parallax-layer>
                     <parallax-layer layer="0">
                         <div class="col-sm-offset-1 col-sm-10 text-left">
+                            <span class="anchor" id="equipo"></span>
                             <section>
                                 <h2 class="section-title text-left">Equipo</h2>
                                 <div class="row">
@@ -343,7 +354,7 @@
                                         </div>
                                          <div style="text-align:left; background-color: rgba(0, 0, 0, 0.31); border: solid 1px; border-top: none; text-align: left; margin-top: 0; padding: 7px;">
                                             <span class="teamName">Omar Balanzar</span>
-                                            <span class="teamTag">CEO</span>
+                                            <span class="teamTag">Chief Executive Officer</span>
                                         </div>
                                     </div>
                                     <div class="col-sm-3 col-xs-6">
@@ -352,7 +363,7 @@
                                         </div>
                                          <div style="text-align:left; background-color: rgba(0, 0, 0, 0.31); border: solid 1px; border-top: none; text-align: left; margin-top: 0; padding: 7px;">
                                             <span class="teamName">Sergio Vargas</span>
-                                            <span class="teamTag">Dir. de Operaciones</span>
+                                            <span class="teamTag">Chief Operating Officer</span>
                                         </div>
                                     </div>
                                     <div class="col-sm-3 col-xs-6">
@@ -361,16 +372,16 @@
                                         </div>
                                         <div style="text-align:left; background-color: rgba(0, 0, 0, 0.31); border: solid 1px; border-top: none; text-align: left; margin-top: 0; padding: 7px;">
                                             <span class="teamName">Rodrigo Ibarra</span>
-                                            <span class="teamTag">Dir. de Información</span>
+                                            <span class="teamTag">Chief Information Officer</span>
                                         </div>
                                     </div>
                                     <div class="col-sm-3 col-xs-6">
                                         <div style="border: solid 1px; border-bottom:none;">
-                                            <img src="images/equipoOmar.jpg" alt="" style="width: 100%;">
+                                            <img src="images/equipoErick.jpg" alt="" style="width: 100%;">
                                         </div>
                                          <div style="text-align:left; background-color: rgba(0, 0, 0, 0.31); border: solid 1px; border-top: none; text-align: left; margin-top: 0; padding: 7px;">
-                                            <span class="teamName">Omar Balanzar</span>
-                                            <span class="teamTag">CEO</span>
+                                            <span class="teamName">Erick Gallardo</span>
+                                            <span class="teamTag">Product Manager</span>
                                         </div>
                                     </div>
                                 </div>
@@ -387,6 +398,7 @@
 
                 <parallax-group z="1">
                     <parallax-layer layer="0" style="background-color:#2B2B2B">
+                        <span class="anchor" id="contacto"></span>
                         <section>
                             <div class="col-sm-offset-1 col-sm-10 text-left">
                                 <h2 class="section-title">Contacto</h2>
