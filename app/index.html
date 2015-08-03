@@ -227,10 +227,10 @@
                                         <div class="col-sm-offset-4 col-sm-4">
                                             <div class="fixing">
                                                 <input disabled autofocus style="visibility: hidden">
-                                                <form is="iron-form" id="form" method="post" action="/form/handler">
+                                                <form is="iron-form" id="formPreRegistro" method="post" action="/form/handler">
                                                     <h4>Pre-registro:</h4>
                                                     <gold-email-input required></gold-email-input>
-                                                    <paper-button raised style="margin-top:15px; width:100%; border: solid 1px white; color:white; letter-spacing: 3px; font-weight: 500;">
+                                                    <paper-button raised onclick="submitPreRegistro()" style="margin-top:15px; width:100%; border: solid 1px white; color:white; letter-spacing: 3px; font-weight: 500;">
                                                         Enviar
                                                     </paper-button>
                                                 </form>
@@ -458,6 +458,12 @@
         </paper-header-panel>
 
     </paper-drawer-panel>
+
+<script>
+    function submitPreRegistro() {
+      document.getElementById('formPreRegistro').submit();
+    }
+</script>
 
 </body>
 </html>
